@@ -61,7 +61,6 @@ public class HelloController {
         greeting = createMessage(name, language);
 
         return greeting;
-
     }
 
     public static String createMessage (String name, String language) {
@@ -91,9 +90,7 @@ public class HelloController {
         } else {
             hello = "Hello ";
         }
-
         return hello + name;
-
     }
 
     @RequestMapping(value = "hello/{name}")
@@ -106,5 +103,4 @@ public class HelloController {
     public String goodbye() {
         return "redirect:/";
     }
-
 }
